@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.fragments;
+package com.citrus.citrusota.fragments;
 
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -25,18 +25,18 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
-import com.fusionjack.slimota.R;
-import com.fusionjack.slimota.configs.AppConfig;
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.configs.OTAVersion;
-import com.fusionjack.slimota.dialogs.WaitDialogFragment;
-import com.fusionjack.slimota.tasks.CheckUpdateTask;
-import com.fusionjack.slimota.utils.OTAUtils;
-import com.fusionjack.slimota.xml.OTALink;
+import com.citrus.citrusota.R;
+import com.citrus.citrusota.configs.AppConfig;
+import com.citrus.citrusota.configs.LinkConfig;
+import com.citrus.citrusota.configs.OTAVersion;
+import com.citrus.citrusota.dialogs.WaitDialogFragment;
+import com.citrus.citrusota.tasks.CheckUpdateTask;
+import com.citrus.citrusota.utils.OTAUtils;
+import com.citrus.citrusota.xml.OTALink;
 
 import java.util.List;
 
-public class SlimOTAFragment extends PreferenceFragment implements
+public class CitrusOTAFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener,
         SharedPreferences.OnSharedPreferenceChangeListener ,
         WaitDialogFragment.OTADialogListener,
@@ -59,7 +59,7 @@ public class SlimOTAFragment extends PreferenceFragment implements
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
 
-        addPreferencesFromResource(R.xml.slimota);
+        addPreferencesFromResource(R.xml.citrusota);
 
         mRomInfo = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_ROM_INFO);
         mCheckUpdate = (PreferenceScreen) getPreferenceScreen().findPreference(KEY_CHECK_UPDATE);

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.tasks;
+package com.citrus.citrusota.tasks;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -28,16 +28,16 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
 
-import com.fusionjack.slimota.MainActivity;
-import com.fusionjack.slimota.R;
-import com.fusionjack.slimota.configs.AppConfig;
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.configs.OTAConfig;
-import com.fusionjack.slimota.configs.OTAVersion;
-import com.fusionjack.slimota.dialogs.WaitDialogHandler;
-import com.fusionjack.slimota.utils.OTAUtils;
-import com.fusionjack.slimota.xml.OTADevice;
-import com.fusionjack.slimota.xml.OTAParser;
+import com.citrus.citrusota.MainActivity;
+import com.citrus.citrusota.R;
+import com.citrus.citrusota.configs.AppConfig;
+import com.citrus.citrusota.configs.LinkConfig;
+import com.citrus.citrusota.configs.OTAConfig;
+import com.citrus.citrusota.configs.OTAVersion;
+import com.citrus.citrusota.dialogs.WaitDialogHandler;
+import com.citrus.citrusota.utils.OTAUtils;
+import com.citrus.citrusota.xml.OTADevice;
+import com.citrus.citrusota.xml.OTAParser;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -154,8 +154,8 @@ public class CheckUpdateTask extends AsyncTask<Context, Void, OTADevice> {
         Notification.Builder builder = new Notification.Builder(context);
         builder.setContentTitle(context.getString(R.string.notification_title));
         builder.setContentText(context.getString(R.string.notification_message));
-        builder.setSmallIcon(R.drawable.ic_notification_slimota);
-        builder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_slimota));
+        builder.setSmallIcon(R.drawable.ic_notification_citrusota);
+        builder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_citrusota));
 
         Intent intent = new Intent(context, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.configs;
+package com.citrus.citrusota.configs;
 
 import android.content.Context;
 
-import com.fusionjack.slimota.utils.OTAUtils;
+import com.citrus.citrusota.utils.OTAUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

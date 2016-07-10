@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota;
+package com.citrus.citrusota;
 
 import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import com.fusionjack.slimota.configs.LinkConfig;
-import com.fusionjack.slimota.dialogs.WaitDialogFragment;
-import com.fusionjack.slimota.fragments.SlimOTAFragment;
+import com.citrus.citrusota.configs.LinkConfig;
+import com.citrus.citrusota.dialogs.WaitDialogFragment;
+import com.citrus.citrusota.fragments.CitrusOTAFragment;
 
 public class MainActivity extends PreferenceActivity implements
         WaitDialogFragment.OTADialogListener, LinkConfig.LinkConfigListener {
 
-    private static final String FRAGMENT_TAG = SlimOTAFragment.class.getName();
-    private SlimOTAFragment mFragment;
+    private static final String FRAGMENT_TAG = CitrusOTAFragment.class.getName();
+    private CitrusOTAFragment mFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mFragment = (SlimOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
+        mFragment = (CitrusOTAFragment) getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
         if (mFragment == null) {
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new SlimOTAFragment(), FRAGMENT_TAG)
+                    .replace(android.R.id.content, new CitrusOTAFragment(), FRAGMENT_TAG)
                     .commit();
         }
 

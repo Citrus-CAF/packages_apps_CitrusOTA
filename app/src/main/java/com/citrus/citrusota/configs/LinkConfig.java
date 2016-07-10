@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.fusionjack.slimota.configs;
+package com.citrus.citrusota.configs;
 
 import android.content.Context;
 
-import com.fusionjack.slimota.xml.OTALink;
-import com.fusionjack.slimota.xml.OTAParser;
-import com.fusionjack.slimota.utils.OTAUtils;
+import com.citrus.citrusota.xml.OTALink;
+import com.citrus.citrusota.xml.OTAParser;
+import com.citrus.citrusota.utils.OTAUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

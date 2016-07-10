@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CitrusOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <condor>
+            <Filename>Citrus-CAF-condor-LemonDrop-1.0-20150507</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Citrus-CAF builds(work in progress)">https://www.androidfilehost.com/?w=files&flid=78269</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="Download Citrus-CAF changelogs(work in progress)">https://www.androidfilehost.com/?w=files&flid=78269</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Open Gapps">http://opengapps.org</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit Citrus-CAF condor thread">http://forum.xda-developers.com/moto-e</XDAUrl>
+	</condor>
+    </Stable>
+</CitrusOTA>
